@@ -1,0 +1,25 @@
+[package]
+name = "kite-turbine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+kite-store = { path = "../components/store" }
+kite-engine = { path = "../components/engine" }
+kite-bot = { path = "../components/bot" }
+kite-scheduler = { path = "../components/scheduler" }
+
+kite-passenger = { path = "../../passenger/rust" }
+kite-cable = { path = "../../cable/rust" }
+
+tonic = "0.7.2"
+log = "0.4.17"
+env_logger = "0.9.0"
+tokio = { version = "1.19.2", features = ["macros", "rt-multi-thread"] }
+config = "0.13.1"
+serde = { version = "1.0.137", features = ["derive"] }
+futures = "0.3.21"
+twilight-model = "0.11.0"
+futures-util = "0.3.21"
+jsonwebtoken = "8.1.1"
+serde_repr = "0.1.8"

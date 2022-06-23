@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "server",
+    "components/engine",
+    "components/store",
+    "components/bot",
+    "components/scheduler"
+]

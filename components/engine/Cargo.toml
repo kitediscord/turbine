@@ -1,0 +1,18 @@
+[package]
+name = "kite-engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+kite-bot = { path = "../bot" }
+kite-store = { path = "../store" }
+
+kite-passenger = { path = "../../../passenger/rust" }
+
+twilight-model = "0.11.0"
+wasmtime = "0.38.0"
+anyhow = "1.0.58"
+async-trait = "0.1.56"
+prost = "0.10.4"
+future-wrap = "0.1.1"
+tokio = "1.19.2"
